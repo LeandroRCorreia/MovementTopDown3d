@@ -1,6 +1,6 @@
 using UnityEngine;
 
-struct AnimationConstantsKeys
+struct MovementAnimationConstantsKeys
 {
     public const string Velocity = "Velocity";
 
@@ -11,7 +11,7 @@ public class CharacterAnimationController : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private CharacterMovement3D characterMovement;
 
-    public int VelocityHash => Animator.StringToHash(AnimationConstantsKeys.Velocity);
+    public int VelocityHash => Animator.StringToHash(MovementAnimationConstantsKeys.Velocity);
 
     void LateUpdate()
     {

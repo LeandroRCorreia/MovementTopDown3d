@@ -55,7 +55,6 @@ public class CharacterMovement3D : MonoBehaviour
 
         transform.forward = Vector3.Lerp(transform.forward, velocity,
         rotMultiplierY * Time.fixedDeltaTime);
-
     }
 
     private void CheckCollisionVertical()
@@ -81,7 +80,6 @@ public class CharacterMovement3D : MonoBehaviour
     private void CheckCollisionHorizontal()
     {
         var rayLenght = velocity.magnitude * Time.fixedDeltaTime;
-        
 
         var hitCount = Physics.BoxCastNonAlloc(ColliderCenter,
         ColliderExtents,

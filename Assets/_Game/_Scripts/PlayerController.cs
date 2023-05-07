@@ -1,7 +1,5 @@
 using UnityEngine;
 
-
-
 [RequireComponent(typeof(CharacterMovement3D))]
 public class PlayerController : MonoBehaviour
 {
@@ -16,9 +14,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
-
-
         characterMovement.InputMovement(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
 }
